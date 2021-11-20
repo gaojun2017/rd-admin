@@ -1,12 +1,16 @@
 <template>
   <div class="login">
     <div class="form-box">
-      <el-input v-model="username" placeholder="请输入内容"></el-input>
+      <el-input v-model="username" placeholder="请输入内容">
+        <i slot="suffix" class="el-input__icon el-icon-user-solid"></i>
+      </el-input>
       <el-input
         placeholder="请输入密码"
         v-model="password"
         show-password
-      ></el-input>
+      >
+      <i slot="suffix" class="el-input__icon el-icon-date"></i>
+      </el-input>
     </div>
   </div>
 </template>
